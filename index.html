@@ -25,37 +25,47 @@
 
 <body>
 
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to
-  discuss arrangements and make bookings. Once the walk has been completed you can rate
-  your walker and book again all through the chat.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="flex flex-col">
+    <div class="phone">
+      <div class="name">
+        <div class="title">Samuel Green</div>
+        <div class="description">Available to Walk</div>
+      </div>
+      <div class="screen">
+        <div class="msg1">That sounds great.<br> I’d be happy with that.</div>
+        <div class="msg2">Could you send over some pictures of your dog, please?</div>
+        <div class="imgs flex flex-row">
+          <img src="./src/images/dog-image-1.jpg" alt="">
+          <img src="./src/images/dog-image-2.jpg" alt="">
+          <img src="./src/images/dog-image-3.jpg" alt="">
+        </div>
+        <div class="msg3">Here are a few pictures. She’s a happy girl!</div>
+        Can you make it?
+        <div class="msg5">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+        <div class="price">
+          <div class="time">30 minute walk</div>
+          <div class="dollar">$29</div>
+        </div>
+        <div class="price">
+          <div class="time">1 hour walk</div>
+          <div class="dollar">$49</div>
+        </div>
+        <input type="text" name="msg" id="send" placeholder="Type a message…">
+      </div>
+    </div>
+    <div class="app_desc">
+      <div class="title">Simple booking</div>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
 </body>
 
 </html>
