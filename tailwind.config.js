@@ -1,7 +1,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", './index.html',],
   theme: {
-    extend: {},
+    fontFamily: {
+      'rubik': ['"Rubik"', '"sans - serif"'],
+    }
   },
   plugins: [],
 }

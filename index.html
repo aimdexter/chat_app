@@ -7,7 +7,9 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./public/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,45 +25,100 @@
   </style>
 </head>
 
-<body>
+<body class="font-rubik">
 
-  <main class="flex flex-col">
-    <div class="phone">
-      <div class="name">
-        <div class="title">Samuel Green</div>
-        <div class="description">Available to Walk</div>
-      </div>
-      <div class="screen">
-        <div class="msg1">That sounds great.<br> I’d be happy with that.</div>
-        <div class="msg2">Could you send over some pictures of your dog, please?</div>
-        <div class="imgs flex flex-row">
-          <img src="./src/images/dog-image-1.jpg" alt="">
-          <img src="./src/images/dog-image-2.jpg" alt="">
-          <img src="./src/images/dog-image-3.jpg" alt="">
+  <main class="flex flex-col w-full justify-center bg-[#f5f3f8] bg-[url('../src/images/bg.svg')] bg-no-repeat">
+
+    <div class="w-[300px] mt-10 bg-white justify-center ml-auto mr-auto p-3 rounded-3xl">
+      <div class="bg-[#f5f3f7] rounded-2xl">
+        <div
+          class="flex items-center relative py-7 px-3 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-t-3xl rounded-b-lg">
+          <div class="flex items-center space-x-2">
+            <div class="absolute -top-1 left-[23%] w-[160px] h-7 rounded-b-2xl bg-white"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" color="white" class="h-3 w-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            <img class="w-[10%] border-2 rounded-full" src="./src/images/avatar.jpg" alt="">
+            <div class="flex flex-col">
+              <div class="text-white text-[13px] font-bold font-rubik">Samuel Green</div>
+              <div class="font-thin text-white text-[8px]">Available to Walk</div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" color="white" class="h-6 w-6 justify-self-end" viewBox="0 0 20 20"
+            fill="currentColor">
+            <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+          </svg>
         </div>
-        <div class="msg3">Here are a few pictures. She’s a happy girl!</div>
-        Can you make it?
-        <div class="msg5">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
-        <div class="price">
-          <div class="time">30 minute walk</div>
-          <div class="dollar">$29</div>
+        <div class="flex flex-col rounded-3xl bg-[#f5f3f7] text-[10px] gap-4 px-2 py-2">
+          <div class="flex flex-col gap-2">
+            <div class="p-2 text-[#be3ffe] bg-[#ede5f2] rounded-bl-sm rounded-br-2xl rounded-t-2xl w-2/3">
+              That sounds great. I’d be happy with that.
+            </div>
+            <div class="p-2 text-[#be3ffe] bg-[#ede5f2] rounded-bl-sm rounded-br-2xl rounded-t-2xl w-2/3">
+              Could you send over some pictures of your dog, please?
+            </div>
+          </div>
+          <div class="flex gap-2 justify-end">
+            <img class="w-1/5 rounded-xl" src="./src/images/dog-image-1.jpg" alt="">
+            <img class="w-1/5 rounded-xl" src="./src/images/dog-image-2.jpg" alt="">
+            <img class="w-1/5 rounded-xl" src="./src/images/dog-image-3.jpg" alt="">
+          </div>
+          <div class="flex justify-end">
+            <div class="p-2 text-[#9473a8] bg-white rounded-br-sm rounded-bl-2xl rounded-t-2xl w-2/3">
+              Here are a few pictures. She’s a happy girl!</div>
+          </div>
+          <div class="flex justify-end">
+            <div class="p-2 text-[#9473a8] bg-white rounded-br-sm rounded-bl-2xl rounded-t-2xl w-fit">
+              Can you make it?
+            </div>
+          </div>
+          <div class="p-2 text-[#be3ffe] bg-[#ede5f2] rounded-bl-sm rounded-br-2xl rounded-t-2xl w-2/3">
+            She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+          <div
+            class="flex items-center w-3/4 py-2 px-3 rounded-bl-sm rounded-br-lg rounded-t-lg justify-between bg-gradient-to-r from-fuchsia-500 to-violet-500">
+            <div class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" color="white" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div class="text-white">30 minute walk</div>
+            </div>
+            <div class="text-white font-extrabold text-lg">$29</div>
+          </div>
+          <div
+            class="flex items-center w-3/4 py-2 px-3 rounded-bl-sm rounded-br-lg rounded-t-lg justify-between bg-gradient-to-r from-fuchsia-500 to-violet-500">
+            <div class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" color="white" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div class="text-white">1 hour walk</div>
+            </div>
+            <div class="text-white font-extrabold text-lg">$49</div>
+          </div>
+          <div class="flex items-center bg-white justify-between  rounded-full">
+            <input class="text-center" type="text" name="msg" id="send" placeholder="Type a message…">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-11 pr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
         </div>
-        <div class="price">
-          <div class="time">1 hour walk</div>
-          <div class="dollar">$49</div>
-        </div>
-        <input type="text" name="msg" id="send" placeholder="Type a message…">
       </div>
     </div>
-    <div class="app_desc">
-      <div class="title">Simple booking</div>
-      <p>
+    <div class="text-center w-[375px] flex flex-col ml-auto mr-auto ">
+      <div class="text-5xl font-extrabold py-10 text-[#3e2753]">Simple booking</div>
+      <div class="text-[#a39daa]">
         Stay in touch with our dog walkers through the chat interface. This makes it easy to
         discuss arrangements and make bookings. Once the walk has been completed you can rate
         your walker and book again all through the chat.
-      </p>
+      </div>
     </div>
-    <div class="attribution">
+    <div class="attribution pt-5">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </div>
